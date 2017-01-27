@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<title> </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="devicon/style.css">
+<!--<link rel="stylesheet" href="debug.css">-->
+
+<body>
+    <!-- Banner -->
+    <div class="w-100 bg-1 ph5-ns ph3 text-light">
+        
+        <nav class="db dt-l w-100 mw8 center border-box pv3">
+            <a class="db dtc-l v-mid link dim w-100 w-25-l tc tl-l mb2 mb0-l white" href="#" title="Home">
+                <img src="logo.svg" class="dib w4 h3" alt="CodeBlocQ">
+            </a>
+            <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" href="#" title="Home">Home</a>
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" href="#" title="How it Works">How it Works</a>
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" href="#" title="Blog">Blog</a>
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" href="#" title="Press">Press</a>
+                <a class="link dim f6 f5-l dib white" href="#" title="Contact">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Title -->
+        <div class="w-100 mw8 center vh-40 dt">
+            <div class="dtc v-mid white">
+                <h1 class="f1-l f2-m tc tc-m tl-ns">Turn an image to Black and White on hover with CSS</h1>
+                <p class="f4 fw3 pab-100px tc tc-m tl-ns">20 Dec 2016</p>
+            </div>
+        </div>
+
+        <!-- Icon -->
+        <div class="relative w-100 mw8 center white dn dn-m db-ns">
+            <span class="header-icon devicon-css3"></span>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="w-100 content ph2 ph4-m ph5-l mv5 mv6-l">
+        <div class="mw8 center">
+            <div class="cf">
+                <div class="fl w-100 w-70-l mw7 left fw3 lh-copy pr4-ns pr0-m">
+                    <p>Here is a CSS code snippet to help you transition an image to Black and White on mouse hover.<br>
+                        <a id="more"></a>
+                    </p>
+                    <h2 id="Demo">
+                        <a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2>
+                    <p></p>
+                    <div class="cp_embed_wrapper">
+                        <iframe id="cp_embed_PzLkEr" src="//codepen.io/klugjo/embed/PzLkEr?height=265&amp;theme-id=0&amp;slug-hash=PzLkEr&amp;default-tab=css%2Cresult&amp;user=klugjo&amp;embed-version=2"
+                            scrolling="no" frameborder="0" height="265" allowtransparency="true" allowfullscreen="true" name="CodePen Embed"
+                            title="CodePen Embed 1" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe>
+                    </div>
+                    <p></p>
+                    <script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+                    <h2 id="Code">
+                        <a href="#Code" class="headerlink" title="Code"></a>Code</h2>
+                    <p>Here is the full code</p>
+                    <figure class="highlight css">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td>
+                                    <td
+                                        class="code"><pre><span class="line"><span class="selector-tag">img</span> {</span><br><span class="line">  <span class="attribute">transition</span>: filter .<span class="number">5s</span> ease-in-out;</span><br><span class="line">  <span class="attribute">-webkit-filter</span>: <span class="built_in">grayscale</span>(0%); <span class="comment">/* Ch 23+, Saf 6.0+, BB 10.0+ */</span></span><br><span class="line">  <span class="attribute">filter</span>: <span class="built_in">grayscale</span>(0%); <span class="comment">/* FF 35+ */</span></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">img</span><span class="selector-pseudo">:hover</span> {</span><br><span class="line">  <span class="attribute">-webkit-filter</span>: <span class="built_in">grayscale</span>(100%); <span class="comment">/* Ch 23+, Saf 6.0+, BB 10.0+ */</span></span><br><span class="line">  <span class="attribute">filter</span>: <span class="built_in">grayscale</span>(100%); <span class="comment">/* FF 35+ */</span></span><br><span class="line">}</span><br></pre></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </figure>
+                    <p><br></p>
+                    <ul>
+                        <li>The Black and White effect is achieved with the <code>grayscale</code> value for the <a href="https://developer.mozilla.org/en/docs/Web/CSS/filter"
+                                target="_blank" rel="external">filter</a> property. <code>grayscale(100%)</code> corresponds to Black and White and
+                            <code>grayscale(0%)</code> corresponds to full colors.<br>The <code>-webkit-filter</code> prefix is <a href="http://shouldiprefix.com/#filters"
+                                target="_blank" rel="external">necessary for that property</a>.</li>
+                        <li>The smooth animation is achieved with the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions"
+                                target="_blank" rel="external">transition</a> property.</li>
+                    </ul>
+                </div>
+                <div class="fl w-100 w-30-l center fw3 lh-copy pl4-ns tl black-50">
+                    <hr class="dn-l mw4 black-50 mt5" />
+                    <div class="mt5 mt0-l">
+                        <article class="dt db-l mw8 mw8-m mw5-ns center ml0-l bg-white mv3">
+                            <div class="dn dtc-m db-l v-mid tc pr4 pr0-l" style="min-width: 6rem;">
+                                <img src="http://tachyons.io/img/avatar_1.jpg" class="mb4-l br-100 h3 w3 h4-l w4-l dib" title="Photo of a kitty staring at you">
+                            </div>
+                            <div class="dtc db-l v-mid lh-copy measure center f6 black-50 tj">
+                                My name is Jonathan Klughertz and this is my blog.<br>
+                                I am a full stack software engineer with a strong front-end focus.<br> 
+                                I currently live and work in Singapore, hit me up if you are in the region.
+                            </div>
+                        </article>
+                    </div>
+                    <hr class="dn-l mw4 black-50 mt5" />
+                    <div class="mt5 tc tl-l">
+                        <h3>Recent Posts</h3>
+                        <p>
+                            <a href="#">Setup Jest to use an External Configuration file</a>
+                        </p>
+                        <p>
+                            <a href="#">8 VSCode Configuration options you need to know about</a>
+                        </p>
+                        <p>
+                            <a href="#">Github avatar not showing on list of commits</a>
+                        </p>
+                        <p>
+                            <a href="#">Setup the latest React in JSBin</a>
+                        </p>
+                        <p>
+                            <a href="#">Set Menu Items in Electron</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="bg-1 ph2 ph5-ns pv5">
+        <div class="mv8">
+            <div class="center tc">
+                <div class="dib mh3">
+                    <a class="f3 f2-ns white dim" href="https://github.com/klugjo">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </div>
+                <div class="dib mh3">
+                    <a class="f3 f2-ns white dim" href="https://www.facebook.com/">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="dib mh3">
+                    <a class="f3 f2-ns white dim" href="https://www.instagram.com/">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="dib mh3">
+                    <a class="f3 f2-ns white dim" href="https://www.twitter.com/">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="f6 f5-ns center tc white pt5 fw3">
+                &copy 2017 All right reserved | Theme Jonathan Klughertz | Powered by hexo
+            </div>
+        </div>
+    </div>
+</body>
+</html>

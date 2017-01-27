@@ -1,0 +1,199 @@
+body {
+    font-family: Helvetica, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.vh-40 {
+    height: 40vh;
+}
+
+.bg-1 {
+    background: #36b1da;
+    background: -moz-linear-gradient(left,  #36b1da 0%, #29c6cd 100%);
+    background: -webkit-linear-gradient(left,  #36b1da 0%,#29c6cd 100%);
+    background: linear-gradient(to right,  #36b1da 0%,#29c6cd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36b1da', endColorstr='#29c6cd',GradientType=1 );
+}
+
+.pab-100px {
+    padding-bottom: 100px;
+}
+
+.w8 {
+    width: 64rem;
+}
+
+.tj {
+    text-align: justify;
+}
+
+.header-icon {
+    font-size: 30vh;
+    opacity: 0.4;
+    position: absolute;
+    bottom: -3rem;
+    right: 6rem;
+}
+
+.border-color {
+    border-color: white;
+}
+
+.hover-color {
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.hover-color:hover {
+    opacity: 0.9;
+    border-color: #29C6CD;
+}
+
+.content {
+    font-size: 16px;
+}
+
+.content a {
+    text-decoration: none;
+    transition: color .15s ease-in;
+    color: #29C6CD;
+}
+
+.content a:hover   {
+    opacity: .5;
+    transition: all .15s ease-in;
+}
+
+.content code, .content pre, .content figure.highlight {
+    background-color: #f7f7f7;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 85%;
+    line-height: 1.45;
+}
+
+.content figure.highlight {
+    margin-left: 0;
+}
+
+.content figure.highlight .gutter {
+    display: none;
+}
+
+.content figure.highlight .code {
+    padding-left: 15px;
+}
+
+/* Lamp */
+
+.lamp {
+  width: 25vh;
+  height: 25vh;
+  position: absolute;
+  overflow: hidden;
+  top: -25vh;
+  right: 0;
+  opacity: 0.6;
+  transition: opacity .8s ease-in;
+}
+
+.lamp:hover {
+    opacity: 1;
+}
+
+.lamp .pa {
+  position: absolute;
+}
+
+.lamp .bg {
+  background-color: #FFFFFF;
+}
+
+.lamp .foot {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  bottom: -42%;
+  left: 20%;
+}
+
+.lamp .leg-1 {
+  height: 30%;
+  width: 5%;
+  left: 65%;
+  transform: rotate(27deg);
+  bottom: 10%;
+}
+
+.lamp .knee {
+  width: 12%;
+  height: 12%;
+  border-radius: 50%;
+  top: 53%;
+  left: 69%;
+}
+
+.lamp .leg-2 {
+  height: 40%;
+  width: 5%;
+  left: 60%;
+  transform: rotate(-42deg);
+  bottom: 35%;
+}
+
+.lamp .neck-mask {
+  top: 19%;
+  left: 42.3%;
+  width: 25%;
+  height: 25%;
+  transform: rotate(24deg);
+  overflow: hidden;
+}
+
+.lamp .neck {
+  height: 80%;
+  width: 35%;
+  left: -17%;
+  transform: rotate(-63deg);
+  bottom: 20%;
+}
+
+.lamp .head-mask-1 {
+  width: 50%;
+  height: 50%;
+  transform: rotate(24deg);
+  top: -8%;
+  left: -11%;
+  overflow: hidden;
+}
+
+.lamp .head-mask-2 {
+  top: 5%;
+  left: 45%;
+  width: 100%;
+  height: 100%;
+  transform: rotate(36deg);
+  overflow: hidden;
+}
+
+.lamp .head {
+  width: 100%;
+  height: 50%;
+  top: 16%;
+  left: -30%;
+  transform: rotate(-18deg);
+}
+
+.lamp .nose-mask {
+  width: 40%;
+  height: 40%;
+  top: 22%;
+  left: -12%;
+  transform: rotate(42deg);
+  overflow: hidden;
+}
+
+.lamp .nose {
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  top: -18%;
+  left: 28%;
+}
