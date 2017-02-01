@@ -1,9 +1,9 @@
 # Logo
-logo_image_source: assets/anodyne.svg
+logo_image_source: /assets/anodyne.svg
 
 # Index Page
 index_banner_text: Welcome to Anodyne
-index_banner_text_secondary: Make magic, not war
+index_banner_text_secondary: Create Websites. Make Magic.
 index_font_awesome_icon_css: fa fa-magic
 
 # Header
@@ -45,4 +45,3 @@ footer_about: "This theme was developed by <a href=\"https://github.com/klugjo\"
 
 # Footer Copyright Line
 footer_copyright: "@Untitled. All right reserved | Design & Hexo <a href=\"http://www.codeblocq.com/\">Jonathan Klughertz</a>"
-

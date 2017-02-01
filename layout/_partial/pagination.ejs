@@ -1,0 +1,14 @@
+<% if(page.prev || page.next) { %>
+    <div class="flex items-center justify-center pa4">
+        <a href="<%- config.root %><%- page.prev_link %>" 
+            class="f5 no-underline inline-flex items-center pa3 ba border-box mr4 <%- page.prev ? 'gray hover-border-main-color hover-text-main-color' : 'light-gray cursor-default' %>">
+            <i class="w1 pr2 fa fa-chevron-left" aria-hidden="true"></i>
+            <span class="pl1">Previous</span>
+        </a>
+        <a href="<%- config.root %><%- page.next_link %>" 
+            class="f5 no-underline inline-flex items-center pa3 ba border-box <%- page.next ? 'gray hover-border-main-color hover-text-main-color' : 'light-gray cursor-default' %>">
+            <span class="pr1">Next</span>
+            <i class="w1 pl2 fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+    </div>
+<% } %>
