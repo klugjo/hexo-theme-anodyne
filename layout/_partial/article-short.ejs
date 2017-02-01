@@ -1,0 +1,21 @@
+<div class="dt w-100 hover-color pointer pa3 border-color bl mv4">
+    <div class="dtc v-mid w-90 black-70">
+        <div>
+            <% if(item.date) { %>
+                <span class="f5 fw3 lh-copy pr4"><%= item.date.format(config.date_format) %></span> 
+            <% } %>
+            <% if (item.tags && item.tags.length) {
+                var tags = [];
+                item.tags.forEach(function(tag){
+                    tags.push('<a class="fw3 ph1" href="' + config.root + tag.path + '">#' + tag.name + '</a>');
+                });
+            %>
+            <%- tags.join(' ') %>
+            <% } %>
+        </div>
+        <span class="f3 fw3 lh-copy"><%- item.title || theme.default_post_title || __('default_post_title') %><span>
+    </div>
+    <div class="dtc v-mid w-10 f1 black-50 tr">
+        <i class="fa <%- item.icon || theme.default_post_icon %>"></i>
+    </div>
+</div>

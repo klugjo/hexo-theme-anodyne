@@ -4,7 +4,7 @@ logo_image_source: assets/anodyne.svg
 # Index Page
 index_banner_text: Welcome to Anodyne
 index_banner_text_secondary: Make magic, not war
-index_font_awesome_icon_css: fa fa-thermometer-full
+index_font_awesome_icon_css: fa fa-magic
 
 # Header
 menu:
@@ -13,8 +13,9 @@ menu:
   About: /about.html
   Contact: /contact.html
 
-# Default post title
+# Post
 default_post_title: Untitled
+default_post_icon: fa-file-text-o
 
 # Archive Date Format
 archive_date_format: MMM YYYY
