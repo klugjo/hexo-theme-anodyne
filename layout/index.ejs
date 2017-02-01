@@ -1,0 +1,17 @@
+<!-- Banner -->
+<%- partial('_partial/banner.ejs', {
+    mainText: theme.index_banner_text,
+    secondaryText: theme.index_banner_text_secondary,
+    faIconCss: theme.index_font_awesome_icon_css
+}) %>
+
+<!-- Content -->
+<div class="w-100 content ph2 ph4-m ph5-l mv5 mv6-l">
+    <div class="mw8 center">
+        <% page.posts.forEach(function(item, index) { %>
+            <%- partial('_partial/article-short', {item: item, index: index}) %>
+        <% }); %>
+    </div>
+</div>
+
+<%- partial('_partial/pagination') %>
