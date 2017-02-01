@@ -1,0 +1,16 @@
+<div class="bg-1 ph2 ph5-ns pv5">
+        <div class="mv8">
+            <div class="center tc">
+                <% theme.social_platforms.forEach(function(platform) { %>
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="<%- platform.url %>" target="_blank">
+                            <i class="fa <%- platform.fa_icon %>"></i>
+                        </a>
+                    </div>
+                <% }) %>
+            </div>
+            <div class="f6 f5-ns center tc white pt5 fw3">
+                <%- theme.footer_about %>
+            </div>
+        </div>
+    </div>

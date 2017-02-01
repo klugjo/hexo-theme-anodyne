@@ -28,20 +28,26 @@ comments:
 # Google Analytics Tracking ID
 google_analytics:
 
-# Social Accounts
-twitter_url: https://twitter.com/?lang=en
-facebook_url: https://www.facebook.com/
-instagram_url: https://www.instagram.com/
-dribble_url: https://dribbble.com/
-github_url: https://github.com/klugjo/hexo-theme-alpha-dust
-googleplus_url: https://plus.google.com/
-behance_url: https://www.behance.net/
-fivehundredpx_url: https://500px.com/
-email_url: test@example.com
-rss_url: \#
+# Social Media Platforms
+social_platforms:
+  - url: https://twitter.com/?lang=en
+    fa_icon: fa-twitter
+  - url: https://www.facebook.com/
+    fa_icon: fa-facebook
+  - url: https://dribbble.com/
+    fa_icon: fa-dribbble 
+  - url: https://github.com/klugjo/hexo-theme-anodyne
+    fa_icon: fa-github
+  - url: https://plus.google.com/
+    fa_icon: fa-google-plus
+  - url: https://www.behance.net/
+    fa_icon: fa-behance
+  - url: https://500px.com/
+    fa_icon: fa-500px
+  - url: mailto:test@example.com
+    fa_icon: fa-envelope
+  - url: /#
+    fa_icon: fa-rss
 
-# Footer About Text
-footer_about: "This theme was developed by <a href=\"https://github.com/klugjo\">Jonathan Klughertz</a>. The source code is available on Github. Create Websites. Make Magic."
-
-# Footer Copyright Line
-footer_copyright: "@Untitled. All right reserved | Design & Hexo <a href=\"http://www.codeblocq.com/\">Jonathan Klughertz</a>"
+# Footer about
+footer_about: "@Untitled. All right reserved | Design & Hexo <a class=\"link dim white\" href=\"http://www.codeblocq.com/\">Jonathan Klughertz</a>"
