@@ -1,0 +1,34 @@
+<!-- Banner -->
+<%- partial('_partial/banner.ejs', {
+    mainText: page.title || theme.default_post_title || __('default_post_title'),
+    secondaryText: page.date ? page.date.format(config.date_format) : '',
+    faIconCss: page.icon || theme.default_post_icon || ''
+}) %>
+
+<!-- Content -->
+<div class="w-100 ph2 ph4-m ph5-l mv5 mv6-l">
+    <div class="content">
+        <div class="mw8 center">
+            <div class="cf">
+                <div class="fl w-100 w-70-l mw7 left fw3 lh-copy pr4-ns pr0-m">
+                    
+                    <!-- Main Post Content -->
+                    <%- page.content %>
+
+                </div>
+                <div class="fl w-100 w-30-l center fw3 lh-copy pl4-ns tl black-50">
+                    
+                    <hr class="dn-l mw4 black-50 mt5" />
+                    
+                    <!-- Widget 1 -->
+                    <%- partial('_partial/widget-about') %>
+
+                    <hr class="dn-l mw4 black-50 mt5" />
+
+                    <!-- Widget 2 -->
+                    <%- partial('_partial/widget-recent-posts') %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

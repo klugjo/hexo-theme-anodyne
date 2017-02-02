@@ -1,0 +1,8 @@
+<div class="mt5 tc tl-l">
+    <h3>Recent Posts</h3>
+    <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
+        <p>
+            <a href="<%- url_for(post.path) %>"><%= (post.title || theme.default_post_title || __('default_post_title')).substring(0, 50) %></a>
+        </p>
+    <% }) %>
+</div>

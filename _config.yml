@@ -20,6 +20,10 @@ default_post_icon: fa-file-text-o
 # Archive Date Format
 archive_date_format: MMM YYYY
 
+# About Widget
+about_widget_avatar_url: http://tachyons.io/img/avatar_1.jpg
+about_widget_text: "My name is Jonathan Klughertz and this is my blog.<br>I am a full stack software engineer with a strong front-end focus.<br> I currently live and work in Singapore, hit me up if you are in the region."
+
 # Comments.
 comments:
   # Disqus comments
