@@ -1,0 +1,99 @@
+// Base
+.content
+  *:first-child
+    margin-top: 0
+
+// Links
+.content
+  font-size 16px
+  a, .fake-link
+    text-decoration none
+    transition color .15s ease-in
+    color $main-color
+    &:hover
+      opacity .5
+      transition all .15s ease-in
+
+// Typography
+.content
+  h1, h2, h3, h4, h5 , h6
+    margin-top: 24px 0 16px 0
+    font-weight: 600
+    line-height: 1.25
+  h1
+    padding-bottom: 0.3em
+    font-size: 2em
+    border-bottom: 1px solid #eee
+  h2
+    padding-bottom: 0.3em
+    font-size: 1.5em
+    border-bottom: 1px solid #eee
+  h3
+    font-size: 1.25em
+  h4
+    font-size: 1em
+  h5
+    font-size: 0.875em
+  h6
+    font-size: 0.85em
+    color: #777
+
+// Elements
+.content
+  hr
+    border: 0
+    height: 1px
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+
+  blockquote
+    background: #f9f9f9
+    border-left: 10px solid #ccc
+    margin: 1.5em 10px
+    padding: 0.5em 40px
+    quotes: "\201C""\201D""\2018""\2019"
+    &:before
+      color: #ccc
+      content: open-quote
+      font-size: 4em
+      line-height: 0.1em
+      margin: 0 0 0 -30px
+      vertical-align: -0.6em
+
+  dl
+    dt
+      font-weight: bold
+
+  ul
+    li
+      list-style-type: square
+
+  table
+    width: 100%
+    border-collapse: collapse
+    th
+      font-weight: normal
+      text-align: left
+      background-color: #F7F7F7
+      padding: 0.4em
+    td
+      padding: 0.4em
+    tr
+      &:not(:last-child)
+        td
+          border-bottom: 1px solid #EEE
+
+// Code Blocks
+.content
+  figure
+    &.highlight
+      margin-left 0
+      .gutter
+        display none
+      .code
+        padding-left 15px
+
+.content code, .content pre, .content figure.highlight
+  background-color #f7f7f7
+  font-family Consolas, "Liberation Mono", Menlo, Courier, monospace
+  font-size 85%
+  line-height 1.45

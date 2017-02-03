@@ -1,0 +1,44 @@
+body
+  font-family $main-font
+
+.vh-40
+  height 40vh
+
+.bg-1
+  background $gradient-color-1
+  background -moz-linear-gradient(left, $gradient-color-1 0%, $gradient-color-2 100%)
+  background -webkit-linear-gradient(left, $gradient-color-1 0%, $gradient-color-2 100%)
+  background linear-gradient(to right, $gradient-color-1 0%, $gradient-color-2 100%)
+
+.pab-100px
+  padding-bottom 100px
+
+.w8
+  width 64rem
+
+.tj
+  text-align justify
+
+.header-icon
+  font-size 30vh
+  opacity 0.4
+  position absolute
+  bottom -3rem
+  right 6rem
+
+.border-color
+  border-color white
+
+.hover-border-main-color
+  transition all 0.3s cubic-bezier(.25,.8,.25,1)
+  &:hover
+    border-color $main-color
+
+.hover-text-main-color
+  transition all 0.3s cubic-bezier(.25,.8,.25,1)
+  &:hover
+    color $main-color
+
+.cursor-default {
+  cursor: default;
+}
