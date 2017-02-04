@@ -56,18 +56,37 @@
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 
   blockquote
-    background: #f9f9f9
+    background #f9f9f9
     border-left: 10px solid #ccc
-    margin: 1.5em 10px
-    padding: 0.5em 40px
-    quotes: "\201C""\201D""\2018""\2019"
-    &:before
-      color: #ccc
-      content: open-quote
-      font-size: 4em
-      line-height: 0.1em
-      margin: 0 0 0 -30px
-      vertical-align: -0.6em
+    margin: 2em 10px
+    padding: 1em 15px
+    p
+      display: inline
+    footer
+      text-align right
+      padding 20px 10px 10px 10px
+      font-family $fontTitle
+      overflow auto
+      strong
+        &:before
+          content "-"
+          padding-right 10px
+      cite
+        padding 10px
+
+  .pullquote
+    float: right;
+    border: none;
+    padding: 0;
+    margin: 1em 0 1em 1.5em;
+    text-align: left;
+    width: 45%;
+    background none
+    font-size 2em
+    font-style italic
+    &.left
+      float left
+      margin: 1em 1.5em 1em 0
 
   dl
     dt
