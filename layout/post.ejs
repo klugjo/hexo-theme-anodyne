@@ -11,9 +11,29 @@
         <div class="mw8 center">
             <div class="cf">
                 <div class="fl w-100 w-70-l mw7 left fw3 lh-copy pr4-ns pr0-m post-content">
-                    
+                    <!-- Tags Vertical -->
+                    <% if (page.tags && page.tags.length) {
+                        var tags = [];
+                        page.tags.forEach(function(tag) {
+                            tags.push('<a class="fw3 ph1 dib" href="' +  config.root + tag.path + '">#' + tag.name + '</a>');
+                        });
+                    %>
+                        <div class="tags-container-vertical">
+                            <div class="tags-sub-container">
+                                <%- tags.join(' ') %>
+                            </div>
+                        </div>
+                    <% } %>
+
                     <!-- Main Post Content -->
                     <%- page.content %>
+                    
+                    <!-- Tags Bottom -->
+                    <% if (page.tags && page.tags.length) { %>
+                        <div class="tags-container-bottom">
+                            <i class="fa fa-tag pr3 text-main-color"></i><%- tags.join(' ') %>
+                        </div>
+                    <% } %>
 
                 </div>
                 <div class="fl w-100 w-30-l center fw3 lh-copy pl4-ns tl black-50">
