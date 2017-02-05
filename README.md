@@ -44,7 +44,7 @@ Then update your blog's main `_config.yml` to set the theme to `anodyne`:
 
 i.e:
 
-```
+``` yaml
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
@@ -61,7 +61,7 @@ On top of that, you can specify a custom font-Awesome icon in the front matter:
 
 Example:
 
-```
+``` yaml
 title: Welcome to Anodyne
 tags: ["ThisIsATag", "Intro", "Welcome", "Anodyne"]
 categories: ["Configuration", "Hexo"]
@@ -77,7 +77,7 @@ The theme's global configuration is done in `/themes/hexo-theme-anodyne/_config.
 
 The menu is configured in the theme's `_config.yml`.
 
-```
+``` yaml
 # Header
 menu:
   Home: /
@@ -93,7 +93,7 @@ The blog's logo is configured in the theme's `_config.yml`.
 
 It should be an image or svg
 
-```
+``` yaml
 # Logo
 logo_image_source: /assets/anodyne.svg
 ```
@@ -102,7 +102,7 @@ logo_image_source: /assets/anodyne.svg
 
 The About section's text in the footer is configured in the theme's `_config.yml`. HTML allowed.
 
-```
+``` yaml
 # Footer about
 footer_about: "@Untitled. All right reserved"
 ```
@@ -111,7 +111,7 @@ footer_about: "@Untitled. All right reserved"
 
 The default post title (used when no title is specified) is configured in the theme's `_config.yml`.
 
-```
+``` yaml
 default_post_title: Untitled
 ```
 
@@ -119,7 +119,7 @@ default_post_title: Untitled
 
 The default post icon (used when no icon is specified) is configured in the theme's `_config.yml`.
 
-```
+``` yaml
 default_post_icon: fa-file-text-o
 ```
 
@@ -127,7 +127,7 @@ default_post_icon: fa-file-text-o
 
 Likewise, you can configure the home page's title, subtitle and icon in the `_config.yml`
 
-```
+``` yaml
 # Index Page
 index_banner_text: Welcome to Anodyne
 index_banner_text_secondary: Create Websites. Make Magic.
@@ -138,7 +138,7 @@ index_font_awesome_icon_css: fa fa-magic
 
 You can change the date format for the archive page if you so desire
 
-```
+``` yaml
 # Archive Date Format
 archive_date_format: MMM YYYY
 ```
@@ -147,7 +147,7 @@ archive_date_format: MMM YYYY
 
 The disqus shortname is specified in the theme's `_config.yml`.
 
-```
+``` yaml
 # Comments.
 comments:
   # Disqus comments
@@ -158,7 +158,7 @@ comments:
 
 The Google Analytics Tracking ID is configured in the theme's `_config.yml`.
 
-```
+``` yaml
 # Google Analytics Tracking ID
 google_analytics:
 ```
@@ -169,7 +169,7 @@ Setup the links to your social pages in the theme's `_config.yml` as an array of
 
 Example:
 
-```
+``` yaml
 # Social Accounts
 social_platforms:
   - url: https://twitter.com/?lang=en
