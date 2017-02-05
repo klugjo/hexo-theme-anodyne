@@ -49,9 +49,11 @@
                     <hr class="dn-l mw4 black-50 mt5" />
                     
                     <!-- Widget 2: Categories -->
-                    <%- partial('_partial/widget-categories', {item: page}) %>
+                    <% if (page.categories && page.categories.length) { %>
+                        <%- partial('_partial/widget-categories', {item: page}) %>
 
-                    <hr class="dn-l mw4 black-50 mt5" />
+                        <hr class="dn-l mw4 black-50 mt5" />
+                    <% } %>
 
                     <!-- Widget 3: Recent Posts -->
                     <%- partial('_partial/widget-recent-posts') %>

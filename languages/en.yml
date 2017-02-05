@@ -1,11 +1,7 @@
-prev: Older Posts
-next: Newer Posts
-comment: Comments
+prev: Previous
+next: Next
 archive_a: Archives
 archive_b: "Archives: %s"
-about: About
 recent_posts: "Recent Posts"
 categories: "Categories"
 default_post_title: "Untitled"
-category: Category
-tag: Tag
