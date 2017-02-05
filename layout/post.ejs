@@ -43,12 +43,17 @@
                     
                     <hr class="dn-l mw4 black-50 mt5" />
                     
-                    <!-- Widget 1 -->
+                    <!-- Widget 1: About -->
                     <%- partial('_partial/widget-about') %>
 
                     <hr class="dn-l mw4 black-50 mt5" />
+                    
+                    <!-- Widget 2: Categories -->
+                    <%- partial('_partial/widget-categories', {item: page}) %>
 
-                    <!-- Widget 2 -->
+                    <hr class="dn-l mw4 black-50 mt5" />
+
+                    <!-- Widget 3: Recent Posts -->
                     <%- partial('_partial/widget-recent-posts') %>
                 </div>
             </div>

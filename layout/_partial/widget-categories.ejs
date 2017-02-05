@@ -1,0 +1,10 @@
+<% if (item.categories && item.categories.length) { %>
+    <div class="mt5 tc tl-l">
+        <h3>Categories</h3>
+        <% item.categories.forEach(function(category) { %>
+            <p>
+                <a href="<%- config.root + category.path %>"><%= category.name %></a>
+            </p>
+        <% }) %>
+    </div>
+<% } %>
