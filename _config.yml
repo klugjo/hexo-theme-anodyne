@@ -19,6 +19,7 @@ default_post_icon: fa-file-text-o
 
 # Archive Date Format
 archive_date_format: MMM YYYY
+archive_font_awesome_icon_css: fa-folder-open
 
 # About Widget
 about_widget_avatar_url: http://tachyons.io/img/avatar_1.jpg

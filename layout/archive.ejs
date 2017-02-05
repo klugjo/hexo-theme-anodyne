@@ -1,0 +1,44 @@
+<%
+    var title = '';
+    if (page.archive) {
+        if (page.year) title = page.year + (page.month ? '/' + page.month : '');
+        else title = __('archive_a');
+    }
+
+    var postList = [];
+    if (page.category) {
+        site.categories.forEach(function(item) {
+            if(item.name === page.category) {
+                postList = item.posts.slice();
+            }
+        });
+        title = page.category;
+    }
+    else if (page.tag) {
+        site.tags.forEach(function(item) {
+            if(item.name === page.tag) {
+                postList = item.posts;
+            }
+        });
+        title = "# " + page.tag;
+    } else {
+        postList = site.posts;
+    }
+%>
+
+<!-- Banner -->
+<%- partial('_partial/banner.ejs', {
+    mainText: title,
+    secondaryText: '',
+    faIconCss: theme.archive_font_awesome_icon_css
+}) %>
+
+<div class="w-100 ph2 ph4-m ph5-l mv5 mv6-l">
+    <div class="content">
+        <div class="mw8 center">
+            <% postList.each(function(item){ %>
+                <%- partial('_partial/article-archive', {item: item}) %>
+            <% }); %>
+        </div>
+    </div>
+</div>

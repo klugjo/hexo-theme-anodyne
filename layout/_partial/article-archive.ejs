@@ -1,0 +1,12 @@
+<a href="<%- url_for(item.path) %>">
+    <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv3">
+        <div class="dtc v-mid w-20 black-50">
+            <% if(item.date) { %>
+                <span class="f4 fw3 lh-copy"><%= item.date.format(theme.archive_date_format) %></span> 
+            <% } %>
+        </div>
+        <div class="dtc v-mid w-80 black-70">
+            <span class="f4 fw3 lh-copy"><%- item.title || theme.default_post_title || __('default_post_title') %><span>
+        </div>
+    </div>
+</a>
