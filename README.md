@@ -1,8 +1,4 @@
-# Welcome the Anodyne
-
-This Hexo Theme was designed and code by myself for my own blog @ [http://www.codeblocq.com/](). It is clean and bright and maybe you will want to use it too :)
-
-It only has a dependency on [tachyons](http://tachyons.io/) and [Font Awesome](http://fontawesome.io/icons/) which makes it really fast and lightweight. No jQuery, no other JS libraries.
+# Welcome to Anodyne
 
 ![Screenshot](http://www.codeblocq.com/img/hexo-theme-thumbnail/hexo-theme-anodyne-screenshot.jpg)
 
