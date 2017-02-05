@@ -1,6 +1,6 @@
 # Welcome to Anodyne
 
-![Screenshot](http://www.codeblocq.com/img/hexo-theme-thumbnail/hexo-theme-anodyne-screenshot.jpg)
+[![Screenshot](http://www.codeblocq.com/img/hexo-theme-thumbnail/hexo-theme-anodyne-screenshot.jpg)](http://www.codeblocq.com/assets/projects/hexo-theme-anodyne/)
 
 [Live Demo Here](http://www.codeblocq.com/assets/projects/hexo-theme-anodyne/)
 
