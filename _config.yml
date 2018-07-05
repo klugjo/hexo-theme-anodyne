@@ -10,6 +10,8 @@ index_font_awesome_icon_css: fa fa-magic
 menu:
   Home: /
   Archives: /archives
+  Tags: /tags
+  Categories: /categories
   About: /about.html
   Contact: /contact.html
 
