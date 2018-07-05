@@ -1,7 +1,7 @@
 <a href="<%- config.root %><%- item.path %>">
     <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv3">
         <div class="dtc v-mid w-80 black-70">
-            <span class="f4 fw3 lh-copy mh4"><%- isTagIndex && "#" %><%- item.name || "Untitled" %><span>
+            <span class="f4 fw3 lh-copy mh4"><%- isTagIndex ? "#" : '' %><%- item.name || "Untitled" %><span>
         </div>
     </div>
 </a>
